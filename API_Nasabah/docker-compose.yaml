@@ -1,7 +1,7 @@
 ﻿version: '3.4'
 
 services:
-  todoapi:
+  api_nasabah:
     image: api_nasabah
     build:
       context: .
