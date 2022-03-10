@@ -2,19 +2,19 @@
 
 services:
   api_nasabah:
-    image: api_nasabah
+    image: khadafi31/bank-khadafi:v.1
     build:
       context: .
       dockerfile: Dockerfile
     ports:
-      - "9080:80"
+      - "44344:80"
     depends_on: 
       - migrations
       - db
   db:
     image: mcr.microsoft.com/mssql/server:2019-latest
     environment:
-      SA_PASSWORD: "sapassword"
+      SA_PASSWORD: "1Secure*Password1"
       ACCEPT_EULA: "Y"
     ports:
     - "14331:1433"
